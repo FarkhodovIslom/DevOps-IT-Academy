@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<!-- 
+███████╗ █████╗ ██████╗ ██╗  ██╗██╗  ██╗ ██████╗ ██████╗  ██████╗ ██╗   ██╗
+██╔════╝██╔══██╗██╔══██╗██║ ██╔╝██║  ██║██╔═══██╗██╔══██╗██╔═══██╗██║   ██║
+█████╗  ███████║██████╔╝█████╔╝ ███████║██║   ██║██║  ██║██║   ██║██║   ██║
+██╔══╝  ██╔══██║██╔══██╗██╔═██╗ ██╔══██║██║   ██║██║  ██║██║   ██║╚██╗ ██╔╝
+██║     ██║  ██║██║  ██║██║  ██╗██║  ██║╚██████╔╝██████╔╝╚██████╔╝ ╚████╔╝ 
+╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═════╝  ╚═════╝   ╚═══╝  
+ -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Loader -->
+    <!-- <link id="loaderStyle" rel="stylesheet" href="./Assets/css/loader.css"> -->
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/files/Assets/images/logo/logo.png" type="image/x-icon">
+    <!-- Bootstrap v5.0.2 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Icons (fa-icons v6.5.1) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LcPIL0pAAAAAK97f611BCjwS44nt0uJeJWV-Om2"></script>
+    <title>DevOps IT Center</title>
+</head>
+<body>
+<!-- Loader -->
+    <div class="loader-container">
+        <div class="banter-loader">
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+            <div class="banter-loader__box"></div>
+        </div>
+    </div>
+
+
+<!-- Header sections starts -->
+    <header id="header">
+        <nav class="navbar container-md">
+            <a class="logo" href="./index.html">
+                <img src="./Assets/images/logo/logo_fluid.png" width="100" alt="Logo">
+            </a>
+
+            <ul id="navList" class="nav_list">
+                <li class="nav_items">
+                    <a href="#home" class="nav_link">Asosiy</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#about" class="nav_link">Biz haqimizda</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#courses" class="nav_link">Kurslar</a>
+                </li>
+                <li class="nav_items">
+                    <a href="./certificate/certificate_mainpage.html" class="nav_link">Sertifikatlar</a>
+                </li>
+                <li class="nav_items">
+                    <a href="#contact" class="nav_link">Bog'lanish</a>
+                </li>
+            </ul>
+
+            <div id="navBtn" class="nav_menu">
+                <label class="hamburger" >
+                    <input type="checkbox" id="menuToggle">
+                    <svg viewBox="0 0 32 32" >
+                      <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                      <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+            </div>
+        </nav>
+    </header>
+<!-- Header sections ends -->
+
+
+<!-- Home section starts -->
+    <section id="home" class="home">
+        
+        <div class="_row container-md">
+
+            <div class="_content">
+                <h3>DevOps <br><span>IT Center</span></h3>
+                <a href="#courses" class="btn btn-outline-success">Kurslar</a>
+            </div>
+
+            <div class="_image">
+                <img src="./Assets/images/backgrounds/bg_home.svg" alt="">
+            </div>
+        </div>
+
+    </section>
+<!-- Home section end -->
+
+
+<!-- counter section start -->
+    <section id="count" class="container-md">
+        <div class="box_container">
+
+            <div class="_box bordered">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div class="content">
+                    <h3>10+</h3>
+                    <p>Kurslar</p>
+                </div>
+            </div>
+
+            <div class="_box bordered">
+                <i class="fa-solid fa-user-graduate"></i>
+                <div class="content">
+                    <h3>70+</h3>
+                    <p>O'quvchilar</p>
+                </div>
+            </div>
+
+            <div class="_box bordered">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <div class="content">
+                    <h3>7+</h3>
+                    <p>Mentorlar</p>
+                </div>
+            </div>
+
+            <div class="_box bordered">
+                <i class="fa-solid fa-face-smile"></i>
+                <div class="content">
+                    <h3>100%</h3>
+                    <p>Qoniqish</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+<!-- counter section end -->
+
+
+<!-- About section start -->
+    <section id="about" class="container-md text-center" >
+        <div class="_row ">
+            <h3 class="display-4 heading mb-2 mt-4">Nima uchun <span class="display-2" style="color: var(--green);">DevOps</span>?</h3>
+
+            <div class="image d-flex justify-content-center hiddenLeft">
+                <img src="./Assets/images/backgrounds/about-us.png" alt="">
+            </div>
+
+            <div class="content hiddenRight">
+                <ul class="list text-start h4 text-light">
+                    <li>Faqat IT sohasiga iqtisoslashgan ta'lim</li>
+                    <li>Yuqori malakaga ega mentorlardan ta'lim olish</li>
+                    <li>Freelancerlik va Online xizmatlar eksportini amalda o'rganish</li>
+                    <li>Darslarni  to'liq amaliyotda va Real buyurtmalar asosida o'rganish imkoniyati</li>
+                    <li>IT sohasida yuqori natijalarga erishgan soha yetakchilari bilan fikr almashish</li>
+                    <li>Darslar davomida o'z portfolioga ega bo'lish hamda Rezyume shakllantirib, ishga joylashishga tayyor bo'lish</li>
+                </ul>
+            </div>
+            
+        </div>
+        <a href="#contact" class="btn btn-outline-success mt-4">Bog'lanish</a>
+    </section>
+<!-- About section end -->
+
+    <hr class="bg-info mt-5">
+
+<!-- Courses section start -->
+    <section id="courses" class="courses container-md text-center text-light pt-5">
+        
+        <h1 class="heading hidden">Bizning <span style="color: var(--green);">kurslarimiz</span></h1>
+
+        <swiper-container class="swiper-lg hidden" autoplay-delay="2500" autoplay-disable-on-interaction="false" pagination="true" pagination-clickable="true" slides-per-view="3" space-between="30" free-mode="true" navigation="true">
+            <swiper-slide class="bordered">
+                <img src="./Assets/images/courses/foundation.png" alt="">
+                <h3>Foundation kursi</h3>
+                <button class="btn btn-outline-success">Batafsil</button>
+            </swiper-slide>
+            <swiper-slide class="bordered">
+                <img src="./Assets/images/courses//design.png" alt="">
+                <h3>Graphic Design</h3>
+                <button class="btn btn-outline-success">Batafsil</button>
+            </swiper-slide>
+            <swiper-slide class="bordered">
+                <img src="./Assets/images/courses/web.png" alt="">
+                <h3>Web Dasturlash</h3>
+                <button class="btn btn-outline-success">Batafsil</button>
+            </swiper-slide>
+            <swiper-slide class="bordered">
+                <img src="./Assets/images/courses/3d_modeling.svg" alt="">
+                <h3>3D Modeling</h3>
+                <button class="btn btn-outline-success">Batafsil</button>
+            </swiper-slide>
+            <swiper-slide class="bordered">
+                <img src="./Assets/images/courses/programming.png" alt="">
+                <h3>Flutter Dasturlash</h3>
+                <button class="btn btn-outline-success">Batafsil</button>
+            </swiper-slide>
+            <swiper-slide class="bordered">
+                <img src="./Assets/images/courses/sm-marketing.png" alt="">
+                <h3>SMM va mobilografiya</h3>
+                <button class="btn btn-outline-success">Batafsil</button>
+            </swiper-slide>
+            <swiper-slide class="bordered">
+                <img src="./Assets/images/courses/english_course.png" alt="">
+                <h3>IT-English kursi</h3>
+                <button class="btn btn-outline-success">Batafsil</button>
+            </swiper-slide>
+            <swiper-slide class="bordered">
+                <img src="./Assets/images/courses/math.png" alt="">
+                <h3>Matematika kursi</h3>
+                <button class="btn btn-outline-success">Batafsil</button>
+            </swiper-slide>
+        </swiper-container>
+
+        <swiper-container class="swiper-sm hidden" effect="cards" grab-cursor="true">
+            <swiper-slide class="bordered">
+                <img src="./Assets/images/courses/foundation.png" alt="">
+                <h3>Foundation kursi</h3>
+                <button class="btn btn-outline-success">Batafsil</button>
+            </swiper-slide>
+            <swiper-slide class="bordered">
+                <img src="./Assets/images/courses//design.png" alt="">
+                <h3>Graphic Design</h3>
+                <button class="btn btn-outline-success">Batafsil</button>
+            </swiper-slide>
+            <swiper-slide class="bordered">
+                <img src="./Assets/images/courses/web.png" alt="">
+                <h3>Web Dasturlash</h3>
+                <button class="btn btn-outline-success">Batafsil</button>
+            </swiper-slide>
+            <swiper-slide class="bordered">
+                <img src="./Assets/images/courses/3d_modeling.svg" alt="">
+                <h3>3D Modeling</h3>
+                <button class="btn btn-outline-success">Batafsil</button>
+            </swiper-slide>
+            <swiper-slide class="bordered">
+                <img src="./Assets/images/courses/programming.png" alt="">
+                <h3>Flutter Dasturlash</h3>
+                <button class="btn btn-outline-success">Batafsil</button>
+            </swiper-slide>
+            <swiper-slide class="bordered">
+                <img src="./Assets/images/courses/sm-marketing.png" alt="">
+                <h3>SMM vs mobilografiya</h3>
+                <button class="btn btn-outline-success">Batafsil</button>
+            </swiper-slide>
+            <swiper-slide class="bordered">
+                <img src="./Assets/images/courses/english_course.png" alt="">
+                <h3>IT-English kursi</h3>
+                <button class="btn btn-outline-success">Batafsil</button>
+            </swiper-slide>
+            <swiper-slide class="bordered">
+                <img src="./Assets/images/courses/math.png" alt="">
+                <h3>Matematika kursi</h3>
+                <button class="btn btn-outline-success">Batafsil</button>
+            </swiper-slide>
+        </swiper-container>
+
+    </section>
+<!-- Courses section end -->
+
+    <hr class="bg-info mt-5">
+
+<!-- Contact section start -->
+    <section id="contact" class="contact container-sm mt-4 mb-2">
+        <h1 class="heading text-center hidden"><span>Ariza</span> qoldirish</h1>
+
+        <div class="_row hiddenLeft">
+
+            <div class="image">
+                <img src="./Assets/images/backgrounds/contact-us.svg" alt="">
+            </div>
+
+            <form onsubmit="emailSend(); return false;" method="post" class="text-start hiddenRight">
+
+                <div class="inputbox">
+                    <input class="box" id="firstName" type="text" required maxlength="25" name="name">
+                    <span>Ism</span>
+                    <i></i>
+                </div>
+
+                <div class="inputbox">
+                    <input class="box" id="lastName" type="text" required maxlength="25" name="name">
+                    <span>Familiya</span>
+                    <i></i>
+                </div>
+
+                <div class="inputbox">
+                    <input class="box" id="age" type="number" required maxlength="2" name="name" oninput="limitLength(this)">
+                    <span>Yoshingiz</span>
+                    <i></i>
+                </div>
+
+                <div class="inputbox">
+                    <input class="box" id="phoneNumber" type="tel" required max="999999999" min="0" name="number" onkeypress="if(this.value.length == 10) return false;" placeholder="">
+                    <span>Tel. raqamingiz</span>
+                    <i></i>
+                </div>
+
+                <select id="courseSelect" name="courses" class="box" required>
+                    <option value="" disabled selected>Kursni tanlash...</option>
+                    <option value="foundation">Foundation</option>
+                    <option value="design">Graphic design</option>
+                    <option value="web">Web Development</option>
+                    <option value="python">Python</option>
+                    <option value="flutter">Flutter</option>
+                    <option value="robotexnika">Robototexnika</option>
+                    <option value="3d">3D Modeling</option>
+                    <option value="smm">SMM</option>
+                    <option value="english">IT-English</option>
+                    <option value="math">Matematika</option>
+                </select>
+                <center>
+                    <button id="emailSendBtn" type="submit" class="btn btn-outline-success" name="send">Yuborish</button>
+                </center>
+            </form>
+        </div>
+    </section>
+<!-- Contact section end -->
+
+<!-- Footer sections start -->
+    <footer class="footer text-center mt-5">
+        <!-- <div id="particles-js"></div> -->
+        <div class="_row container-md">
+            <div class="icons d-flex align-items-center justify-content-center">
+                <ul class="footer-icons">
+
+                    <li class="icon-content">
+                        <a href="https://t.me/devops_itcenter">
+                          <div class="filled"></div>
+                          <i class="fa-brands fa-telegram"></i>
+                        </a>
+                        <div class="tooltip">Telegram</div>
+                    </li>
+
+                    <li class="icon-content">
+                      <a href="https://www.instagram.com/devops.it_center/">
+                        <div class="filled"></div>
+                        <i class="fa-brands fa-instagram"></i>
+                      </a>
+                      <div class="tooltip">Instagram</div>
+                    </li>
+
+                    <li class="icon-content">
+                      <a href="https://www.youtube.com/@DEVOPS_ITCenter">
+                        <div class="filled"></div>
+                        <i class="fa-brands fa-youtube"></i>
+                      </a>
+                      <div class="tooltip">Youtube</div>
+                    </li>
+
+                    <li class="icon-content">
+                      <a href="mailto:devopsitcenter@gmail.com">
+                        <div class="filled"></div>
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                      <div class="tooltip">Email</div>
+                    </li>
+
+                    <li class="icon-content">
+                      <a href="tel:+998957781199">
+                        <div class="filled"></div>
+                        <i class="fas fa-phone"></i>
+                      </a>
+                      <div class="tooltip">Telefon</div>
+                    </li>
+                  </ul>
+            </div>
+            <hr class="hline">
+            <div class="cpright lead">&copy;Copyright <a href="#" style="color: var(--green);">DevOps IT-Center</a> | 2024</div>
+        </div>
+    </footer>
+
+<!-- Footer sections start -->
+
+<!-- Cdn scripts -->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<!-- Custom script -->
+<script src="./Assets/js/particles.js"></script>
+<script src="./Assets/js/app.js"></script>
+<script src="./Assets/js/typing.js"></script>
+<script src="./Assets/js/script.js"></script>
+<script src="./Assets/js/email.js"></script>
+
+</body>
+</html>
