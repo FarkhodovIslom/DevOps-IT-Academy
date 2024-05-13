@@ -86,7 +86,7 @@ body
 
 .heading 
 {
-    font-size: 5rem;
+    font-size: 4.5rem;
     color: var(--white);
 }
 .heading span 
@@ -261,6 +261,12 @@ body
 .home ._row ._content h3 span
 {
     color: var(--green);    
+}
+
+.home ._row ._content .heading_text
+{
+    font-size: 1.85em;
+    color: var(--white);
 }
 
 /* Home ends */
@@ -685,7 +691,10 @@ select.box
     .home ._row ._image img {
         width: 65%;
     }
-
+    .home ._row ._content .heading_text {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
     .contact ._row .image img 
     {
         width: 80%;
