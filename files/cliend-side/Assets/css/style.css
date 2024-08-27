@@ -89,13 +89,17 @@ body
     font-size: 4.5rem;
     color: var(--white);
 }
-.heading span 
+.heading span
 {
     font-size: 5.2rem;
     color: var(--green) ;
     font-weight: 700;
 }
-
+span.text-green
+{
+  color: var(--green) ;
+  font-weight: 700;
+}
 
 /* Scroll animation styles */
 .show 
@@ -325,7 +329,20 @@ body
 /* About section start */
 #about 
 {
-    margin-top: 9rem;
+    margin-top: 4rem;
+}
+
+#about .box_container .box 
+{
+  margin: 0 auto;
+}
+#about .box_container p.lead
+{
+  font-size: 2.6rem;
+}
+#about .box_container p.text
+{
+  font-size: 1.8rem;
 }
 
 #about ._row 
