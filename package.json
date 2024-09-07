@@ -1,0 +1,22 @@
+{
+  "name": "devops-it-academy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "angular": "^1.8.3",
+    "express": "^4.19.2",
+    "jquery": "^3.7.1",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.6.1",
+    "nodemon": "^3.1.4",
+    "react": "^18.3.1",
+    "vue": "^3.5.1"
+  }
+}

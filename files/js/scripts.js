@@ -43,9 +43,9 @@
 
 
     /* Countdown Timer - The Final Countdown */
-	$('#clock').countdown('2020/12/27 08:50:56') /* change here your "countdown to" date */
+	$('#clock').countdown('2024/12/27 12:00:00')
 	.on('update.countdown', function(event) {
-		var format = '<span class="counter-number">%D<br><span class="timer-text">Days</span></span><span class="counter-number">%H<br><span class="timer-text">Hours</span></span><span class="counter-number">%M<br><span class="timer-text">Minutes</span></span><span class="counter-number">%S<br><span class="timer-text">Seconds</span></span>';
+		var format = '<span class="counter-number">%D<br><span class="timer-text">Kun</span></span><span class="counter-number">%H<br><span class="timer-text">Soat</span></span><span class="counter-number">%M<br><span class="timer-text">Daqiqa</span></span><span class="counter-number">%S<br><span class="timer-text">Soniya</span></span>';
 		$(this).html(event.strftime(format));
 	})
 	.on('finish.countdown', function(event) {
@@ -78,22 +78,22 @@
         spaceBetween: 30,
         slidesPerView: 5,
 		breakpoints: {
-            // when window is <= 580px
+            // <= 580px
             580: {
                 slidesPerView: 1,
                 spaceBetween: 10
             },
-            // when window is <= 768px
+            // <= 768px
             768: {
                 slidesPerView: 2,
                 spaceBetween: 20
             },
-            // when window is <= 992px
+            // <= 992px
             992: {
                 slidesPerView: 3,
                 spaceBetween: 20
             },
-            // when window is <= 1200px
+            // <= 1200px
             1200: {
                 slidesPerView: 4,
                 spaceBetween: 20
@@ -117,7 +117,7 @@
         spaceBetween: 70,
         slidesPerView: 2,
 		breakpoints: {
-            // when window is <= 1199px
+            // <= 1199px
             1199: {
                 slidesPerView: 1,
             },
@@ -125,7 +125,7 @@
     });
     
 
-    /* Video Lightbox - Magnific Popup */
+    /* Video Lightbox */
     $('.popup-youtube, .popup-vimeo').magnificPopup({
         disableOn: 700,
         type: 'iframe',
@@ -161,7 +161,7 @@
     /* Details Lightbox - Magnific Popup */
 	$('.popup-with-move-anim').magnificPopup({
 		type: 'inline',
-		fixedContentPos: false, /* keep it false to avoid html tag shift with margin-right: 17px */
+		fixedContentPos: false, 
 		fixedBgPos: true,
 		overflowY: 'auto',
 		closeBtnInside: true,
@@ -173,7 +173,6 @@
     
     
     /* Move Form Fields Label When User Types */
-    // for input and textarea fields
     $("input, textarea").keyup(function(){
 		if ($(this).val() != '') {
 			$(this).addClass('notEmpty');
@@ -186,18 +185,16 @@
     /* Registration Form */
     $("#registrationForm").validator().on("submit", function(event) {
     	if (event.isDefaultPrevented()) {
-            // handle the invalid form...
             rformError();
             rsubmitMSG(false, "Please fill all fields!");
         } else {
-            // everything looks good!
             event.preventDefault();
             rsubmitForm();
         }
     });
 
     function rsubmitForm() {
-        // initiate variables with form content
+        
 		var name = $("#rname").val();
 		var email = $("#remail").val();
 		var phone = $("#rphone").val();
@@ -221,7 +218,7 @@
     function rformSuccess() {
         $("#registrationForm")[0].reset();
         rsubmitMSG(true, "Request Submitted!");
-        $("input").removeClass('notEmpty'); // resets the field label after submission
+        $("input").removeClass('notEmpty'); 
     }
 
     function rformError() {
@@ -243,18 +240,15 @@
     /* Newsletter Form */
     $("#newsletterForm").validator().on("submit", function(event) {
     	if (event.isDefaultPrevented()) {
-            // handle the invalid form...
             nformError();
             nsubmitMSG(false, "Please fill all fields!");
         } else {
-            // everything looks good!
             event.preventDefault();
             nsubmitForm();
         }
     });
 
     function nsubmitForm() {
-        // initiate variables with form content
 		var email = $("#nemail").val();
         var terms = $("#nterms").val();
         $.ajax({
@@ -275,7 +269,7 @@
     function nformSuccess() {
         $("#newsletterForm")[0].reset();
         nsubmitMSG(true, "Subscribed!");
-        $("input").removeClass('notEmpty'); // resets the field label after submission
+        $("input").removeClass('notEmpty');
     }
 
     function nformError() {
@@ -297,18 +291,16 @@
     /* Contact Form */
     $("#contactForm").validator().on("submit", function(event) {
     	if (event.isDefaultPrevented()) {
-            // handle the invalid form...
             cformError();
             csubmitMSG(false, "Please fill all fields!");
         } else {
-            // everything looks good!
             event.preventDefault();
             csubmitForm();
         }
     });
 
     function csubmitForm() {
-        // initiate variables with form content
+        
 		var name = $("#cname").val();
 		var email = $("#cemail").val();
         var message = $("#cmessage").val();
@@ -331,8 +323,8 @@
     function cformSuccess() {
         $("#contactForm")[0].reset();
         csubmitMSG(true, "Message Submitted!");
-        $("input").removeClass('notEmpty'); // resets the field label after submission
-        $("textarea").removeClass('notEmpty'); // resets the field label after submission
+        $("input").removeClass('notEmpty'); 
+        $("textarea").removeClass('notEmpty'); 
     }
 
     function cformError() {
@@ -354,18 +346,15 @@
     /* Privacy Form */
     $("#privacyForm").validator().on("submit", function(event) {
     	if (event.isDefaultPrevented()) {
-            // handle the invalid form...
             pformError();
             psubmitMSG(false, "Please fill all fields!");
         } else {
-            // everything looks good!
             event.preventDefault();
             psubmitForm();
         }
     });
 
     function psubmitForm() {
-        // initiate variables with form content
 		var name = $("#pname").val();
 		var email = $("#pemail").val();
         var select = $("#pselect").val();
@@ -389,7 +378,7 @@
     function pformSuccess() {
         $("#privacyForm")[0].reset();
         psubmitMSG(true, "Request Submitted!");
-        $("input").removeClass('notEmpty'); // resets the field label after submission
+        $("input").removeClass('notEmpty');
     }
 
     function pformError() {
@@ -409,7 +398,6 @@
     
 
     /* Back To Top Button */
-    // create the back to top button
     $('body').prepend('<a href="body" class="back-to-top page-scroll">Back to Top</a>');
     var amountScrolled = 700;
     $(window).scroll(function() {
@@ -420,8 +408,7 @@
         }
     });
 
-
-	/* Removes Long Focus On Buttons */
+    
 	$(".button, a, button").mouseup(function() {
 		$(this).blur();
 	});

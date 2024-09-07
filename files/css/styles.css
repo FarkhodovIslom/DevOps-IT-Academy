@@ -838,9 +838,12 @@ input[type='checkbox'] {
 
 .header .slider-container {
 	position: relative;
+	/* height: 570px; */
+	top: 35px;
 }
 
 .header .swiper-container {
+	/* height: 580px; */
 	position: static;
 	width: 80%;
 	border-radius: 0.75rem;
@@ -852,7 +855,6 @@ input[type='checkbox'] {
 
 .header .swiper-button-prev:focus,
 .header .swiper-button-next:focus {
-	/* even if you can't see it chrome you can see it on mobile device */
 	outline: none;
 }
 
@@ -868,6 +870,28 @@ input[type='checkbox'] {
 	background-size: 1.125rem 1.75rem;
 }
 
+@media only screen and (min-width: 1200px) {
+	.header .swiper-container {
+		width: 89% !important;
+		height: 580px !important;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.header .swiper-container {
+		height: 580px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.header .swiper-container {
+		width: 75%;
+		height: 370px;
+	}
+}
+@media screen and (max-width: 992px) {
+	.header .slider-container {
+		top: 55px;
+	}
+}
 
 /****************************/
 /*     05. Registration     */
